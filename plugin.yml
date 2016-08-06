@@ -1,0 +1,22 @@
+name: ServerSync
+main: com.AustinPilz.ServerSync.ServerSync
+version: 1.6.2
+description: Server Sync functions
+author: Austin Pilz
+website: http://serversync.austinpilz.com
+load: POSTWORLD
+softdepend: [Multiverse-Core, Multiworld, Vault, PlayerPoints]
+commands:
+    serversync:
+        description: Server Sync commands
+    sc:
+        description: Server Sync alias
+permissions:
+    ServerSync.*:
+        description: Gives access to all ServerSync commands
+        children:
+            ServerSync.admin: true
+        default: op
+    ServerSync.admin:
+        description: Gives admin access to ServerSync commands
+        default: op
