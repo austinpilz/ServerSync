@@ -4,6 +4,8 @@ ServerSync allows you to sync data from your supported plugins across all of you
 #Plugin Information
 For detailed plugin information and setup guides, see the [ServerSync Wiki] ()
 
+To download and install the JAR plugin for your Minecraft server, visit the [ServerSync Spigot Page] (http://serversync.austinpilz.com)
+
 #Issues / Support
 If you encounter any issues with ServerSync, please open an issue on GitHub and I'll see what I can do.
 
