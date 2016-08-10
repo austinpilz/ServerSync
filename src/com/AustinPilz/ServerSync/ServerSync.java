@@ -5,6 +5,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.AustinPilz.ServerSync.IO.SpigotUpdateChecker;
+import com.AustinPilz.ServerSync.Listener.PlayerListener;
 import net.milkbowl.vault.economy.Economy;
 
 import org.bukkit.Bukkit;
@@ -115,6 +116,7 @@ public class ServerSync extends JavaPlugin implements Listener
 		
 		//Register Listeners
 		getServer().getPluginManager().registerEvents(new VaultListener(), this); //Vault
+		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 
 		//Update Checker
 		this.updateChecker = new SpigotUpdateChecker();

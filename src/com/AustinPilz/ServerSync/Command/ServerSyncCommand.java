@@ -26,7 +26,14 @@ public class ServerSyncCommand implements CommandExecutor
 			{
 				if (args[0].equalsIgnoreCase("update"))
 				{
-
+					if (ServerSync.updateChecker.isUpdateNeeded())
+					{
+						sender.sendMessage(ServerSync.chatPrefix + ChatColor.WHITE + "You are running " + ServerSync.pluginIdentifier + " and the latest version available is v" + ServerSync.updateChecker.getLatestVersion() + ChatColor.RED + " Update recommended" + ChatColor.WHITE + "!! Please visit " + ChatColor.YELLOW + "http://serversyncbungeecord.austinpilz.com");
+					}
+					else
+					{
+						sender.sendMessage(ServerSync.chatPrefix + ChatColor.WHITE + ServerSync.pluginIdentifier + " is " + ChatColor.GREEN + "up to date" + ChatColor.WHITE + "!");
+					}
 				}
 				else if (args[0].equalsIgnoreCase("Plugins"))
 				{

@@ -17,7 +17,7 @@ public class PlayerListener implements Listener
     {
         if (event.getPlayer().hasPermission("ServerSync.Admin") && ServerSync.updateChecker.isUpdateNeeded())
         {
-            event.getPlayer().sendMessage(ServerSync.chatPrefix + "There is an update for ServerSync! Currently running v" + ChatColor.RED + ServerSync.pluginVersion + ChatColor.WHITE + "and most recent is v" + ChatColor.GREEN + ServerSync.updateChecker.getLatestVersion() + ChatColor.WHITE + " Please visit " + ChatColor.YELLOW + "http://serversync.austinpilz.com" + ChatColor.WHITE + " to update");
+            event.getPlayer().sendMessage(ServerSync.chatPrefix + "There is an update for ServerSync! Currently running v" + ChatColor.RED + ServerSync.pluginVersion + ChatColor.WHITE + " and most recent is v" + ChatColor.GREEN + ServerSync.updateChecker.getLatestVersion() + ChatColor.WHITE + " Please visit " + ChatColor.YELLOW + "http://serversyncbungeecord.austinpilz.com" + ChatColor.WHITE + " to update");
         }
     }
 }
