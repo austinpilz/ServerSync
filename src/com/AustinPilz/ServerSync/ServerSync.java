@@ -35,7 +35,7 @@ import com.AustinPilz.ServerSync.Vault.VaultUpdate;
 public class ServerSync extends JavaPlugin implements Listener 
 {
 	//Plugin Strings
-	public static final String pluginVersion = "1.6.2";
+	public static final String pluginVersion = "1.6.3";
 	public static final String pluginName = "Server Sync";
 	public static final String pluginIdentifier = pluginName + " v" + pluginVersion;
 	public static final String consolePrefix = "[ServerSync] ";
@@ -100,8 +100,7 @@ public class ServerSync extends JavaPlugin implements Listener
 		//Commands
 		getCommand("serversync").setExecutor(new ServerSyncCommand());
 		
-		//Register Bungee Communication
-		
+		//Register Bungee Communicatios
 		bungeeOutgoing = new BungeeOutgoing();
 		this.getServer().getMessenger().registerOutgoingPluginChannel(this, bungeeChannel);
 		this.getServer().getMessenger().registerIncomingPluginChannel(this, bungeeChannel, new BungeeIncoming());
@@ -142,8 +141,8 @@ public class ServerSync extends JavaPlugin implements Listener
 	       log.log(Level.WARNING, consolePrefix + "Error while submitting metrics!");
 	    }
 		
-		//Bootup Successful
-		log.log(Level.INFO, consolePrefix + "Bootup took " + (System.currentTimeMillis() % 1000 - startMili) + " ms"); 
+		//Startup Successful
+		log.log(Level.INFO, consolePrefix + "Startup took " + (System.currentTimeMillis() % 1000 - startMili) + " ms");
 	}
 	
 	@Override

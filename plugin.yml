@@ -1,6 +1,6 @@
 name: ServerSync
 main: com.AustinPilz.ServerSync.ServerSync
-version: 1.6.2
+version: 1.6.3
 description: Server Sync functions
 author: Austin Pilz
 website: http://serversync.austinpilz.com
